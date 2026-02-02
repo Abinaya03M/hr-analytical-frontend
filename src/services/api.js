@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://hr-analytics-backend-1.onrender.com/analytics/kpis/",
+  baseURL: "https://hr-analytics-backend-1.onrender.com/analytics/",
 });
 
 export const fetchJobRoleAttrition = () => API.get("attrition/job-role/");
