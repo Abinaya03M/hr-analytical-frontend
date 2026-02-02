@@ -1,0 +1,47 @@
+.insights-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #f1ebef, #ebd1ed);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.insight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.insight-card h2 {
+  color: #1f3c88;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.insight-card ul,
+.insight-card ol {
+  padding-left: 20px;
+}
+
+.insight-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.insight-card th,
+.insight-card td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.insight-card th {
+  background: #f0f4ff;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}

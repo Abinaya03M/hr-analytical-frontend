@@ -1,0 +1,147 @@
+.dashboard {
+  height: 100vh;
+  padding: 10px;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f1ebef, #ebd1ed);
+  overflow: hidden;
+}
+
+/* TITLE */
+.dashboard-title {
+  color: #1f3c88;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* KPI + SLICER ROW */
+.kpi-slicer-row {
+  display: grid;
+  grid-template-columns: 4fr 1.4fr;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* KPI GRID */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+/* KPI CARD */
+.kpi-card {
+  background: #ffffff;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 6px;
+  text-align: center;
+  color: #1f3c88;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.kpi-card span {
+  font-size: 14px;
+  color: #666;
+}
+
+.kpi-card h2 {
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* SLICER PANEL */
+.slicer-panel {
+  background: #ffffff;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.slicer-panel h4 {
+  font-size: 13px;
+  margin: 2px 0;
+}
+
+.slicer-panel label {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.slicer-panel select {
+  width: 100%;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* RESET BUTTON */
+.reset-btn {
+  margin-top: 6px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background: #4dabf7;
+  color: white;
+  font-size: 11px;
+  border: none;
+}
+
+/* CHART GRID */
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:10px;
+  /* height: calc(100vh - 130px);  */
+}
+
+
+/* CHART CARD */
+/* .chart-box {
+  background: #ffffff;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.chart-box h3 {
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 2px;
+} */
+ .chart-box {
+  background: #ffffff;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+
+  height: 230px;          /* 👈 FIXED SMALL HEIGHT */
+  display: flex;
+  flex-direction: column;
+}
+.chart-box h3 {
+  font-size: 11px;
+  margin: 2px 0;
+  text-align: center;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .chart-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .kpi-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
